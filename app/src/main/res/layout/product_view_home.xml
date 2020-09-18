@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="5dp"
+    >
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/product_view_home_height"
+        android:id="@+id/productImageView"
+        />
+    <com.google.android.material.textview.MaterialTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Men's Shirt blue "
+        android:maxLines="2"
+        android:ellipsize="end"
+        android:id="@+id/productTextView"
+        />
+
+</androidx.appcompat.widget.LinearLayoutCompat>
