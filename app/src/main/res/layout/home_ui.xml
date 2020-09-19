@@ -8,15 +8,27 @@
     <include layout="@layout/appbar" />
 
     <com.google.android.material.button.MaterialButton
-        android:layout_width="0dp"
+        android:id="@+id/clickMe"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Click me"
-        app:layout_constraintEnd_toEndOf="parent"
+        android:text="Button"
         app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintBottom_toBottomOf="parent"
-        android:id="@+id/click"
         />
+
+    <ProgressBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/clickMe"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintVertical_bias="0"
+        android:id="@+id/progressBar"
+        />
+
 
     <!--<androidx.core.widget.NestedScrollView
         android:layout_width="match_parent"
